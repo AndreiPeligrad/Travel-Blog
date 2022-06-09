@@ -1,0 +1,237 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Sen&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  font-family: "Montserrat", sans-serif;
+}
+
+.wrapper {
+  width: 100%;
+  height: 100%;
+}
+
+.navbar {
+  width: 100%;
+  height: 60px;
+  background: rgb(156, 185, 240);
+  position: fixed;
+  z-index: 2;
+}
+
+.navbar > ul {
+  display: flex;
+  justify-content: center;
+}
+
+.navbar ul li {
+  position: relative;
+}
+
+.navbar ul li a {
+  display: block;
+  color: rgb(0, 0, 0);
+  height: 60px;
+  width: 300px;
+  text-align: center;
+  padding: 20px 10px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  transition: all 0.2s ease;
+  font-weight: 800;
+}
+
+.navbar ul > li a {
+  margin-right: 1px;
+}
+
+.navbar ul > li:last-child a {
+  margin-right: 0;
+}
+
+.navbar ul li a .icon {
+  width: 25px;
+  display: inline-block;
+}
+
+.navbar ul li a:hover,
+.navbar ul li a.a_parent.active,
+.navbar .dd_menu ul li a:hover,
+.navbar .dd_menu ul li a.active {
+  background: #6193f0;
+  transition: linear 600ms;
+}
+
+.navbar .dd_menu {
+  position: absolute;
+  top: 80px;
+  left: 0;
+  display: none;
+}
+
+.navbar .dd_menu ul li a {
+  width: 300px;
+  background: rgb(156, 185, 240);
+
+  text-align: center;
+  padding: 20px;
+}
+
+#poza_header {
+  background-image: url(poze/balea-glacier-lake-fagaras-mountains-romania.jpg);
+  width: 100%;
+  height: 30vw;
+  background-position-y: 95%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+#text_header {
+  display: block;
+  text-align: justify;
+  justify-content: center;
+  position: relative;
+  top: 36%;
+  left: 20%;
+  width: 60%;
+  background-color: rgba(248, 252, 253, 0.8);
+  padding: 20px;
+  border-radius: 25px;
+  border: 2px solid black;
+}
+p1 {
+  font-family: "Leckerli One", cursive;
+  font-weight: 300;
+  letter-spacing: 1px;
+  word-spacing: 0.5px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 35px;
+}
+
+h1 {
+  font-size: 20px;
+  padding: 10px;
+  font-family: "Sen", sans-serif;
+}
+
+#grid1 {
+  display: grid;
+  grid-template: 150px 30px 150px 30px / repeat(3, 200px);
+  height: 33vw;
+  width: 40%;
+  margin: 0 auto;
+  gap: 50px;
+  background-color: #e8f4f8;
+  padding: 20px;
+}
+
+#celula1 {
+  background-image: url(poze/travel-icon-hiking.png);
+
+  grid-area: 1/1 / span 1 / span 1;
+  width: 150px;
+  height: 150px;
+  transform: translate(25px, 0px);
+  margin-top: 35px;
+}
+
+#text_celula1 {
+  grid-area: 2 / span 1 / 3 / span 1;
+  text-align: center;
+}
+
+#celula2 {
+  background-image: url(poze/travel-icon-boat.png);
+  grid-area: 1/2 / span 1 / span 1;
+  width: 150px;
+  height: 150px;
+  transform: translate(25px, 0px);
+  margin-top: 35px;
+}
+
+#text_celula2 {
+  grid-area: 2/2 / span 1 / span 1;
+  text-align: center;
+}
+#celula3 {
+  background-image: url(poze/travel-icon-van.png);
+  grid-area: 1/3 / span 1 / span 1;
+  width: 150px;
+  height: 150px;
+  transform: translate(25px, 0px);
+  margin-top: 35px;
+}
+
+#text_celula3 {
+  grid-area: 2/3 / span 1 / span 1;
+  text-align: center;
+}
+#celula4 {
+  background-image: url(poze/travel-icon-skis.png);
+  grid-area: 3/1 / span 1 / span 1;
+  width: 150px;
+  height: 150px;
+  transform: translate(25px, 0px);
+  margin-top: 35px;
+}
+
+#text_celula4 {
+  grid-area: 4/1 / span 1 / span 1;
+  text-align: center;
+}
+#celula5 {
+  background-image: url(poze/travel-icon-mountain.png);
+  grid-area: 3/2 / span 1 / span 1;
+  width: 150px;
+  height: 150px;
+  transform: translate(25px, 0px);
+  margin-top: 35px;
+}
+
+#text_celula5 {
+  grid-area: 4/2 / span 1 / span 1;
+  text-align: center;
+}
+#celula6 {
+  background-image: url(poze/travelicons-bike-01-150x150.png);
+  grid-area: 3/3 / span 1 / span 1;
+  width: 150px;
+  height: 150px;
+  transform: translate(25px, 0px);
+  margin-top: 35px;
+}
+
+#text_celula6 {
+  grid-area: 4/3 / span 1 / span 1;
+  text-align: center;
+}
+
+p3 {
+  font-size: 25px;
+  font-family: "Sen", sans-serif;
+}
+
+p2 {
+  font-size: 35px;
+  font-weight: 400;
+  font-family: "Sen", sans-serif;
+}
+
+#titlu_aventuri {
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #e8f4f8;
+}
+
+body {
+  background-color: #e8f4f8;
+}

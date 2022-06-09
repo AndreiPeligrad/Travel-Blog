@@ -1,0 +1,189 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Sen&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  font-family: "Montserrat", sans-serif;
+}
+
+.wrapper {
+  width: 100%;
+  height: 100%;
+}
+
+.navbar {
+  width: 100%;
+  height: 60px;
+  background: rgb(156, 185, 240);
+  position: fixed;
+  z-index: 2;
+}
+
+.navbar > ul {
+  display: flex;
+  justify-content: center;
+}
+
+.navbar ul li {
+  position: relative;
+}
+
+.navbar ul li a {
+  display: block;
+  color: rgb(0, 0, 0);
+  height: 60px;
+  width: 300px;
+  text-align: center;
+  padding: 20px 10px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  transition: all 0.2s ease;
+  font-weight: 800;
+}
+
+.navbar ul > li a {
+  margin-right: 1px;
+}
+
+.navbar ul > li:last-child a {
+  margin-right: 0;
+}
+
+.navbar ul li a .icon {
+  width: 25px;
+  display: inline-block;
+}
+
+.navbar ul li a:hover,
+.navbar ul li a.a_parent.active,
+.navbar .dd_menu ul li a:hover,
+.navbar .dd_menu ul li a.active {
+  background: #6193f0;
+  transition: linear 600ms;
+}
+
+iframe {
+  pointer-events: none;
+  width: 800px;
+  height: 800px;
+  display: block;
+}
+
+#1 {
+  display: inline;
+  width: 100%;
+  height: 500px;
+}
+h1 {
+  position: absolute;
+  left: 50%;
+  bottom: -10%;
+  text-align: justify;
+  width: 42%;
+  font-size: 30px;
+  margin-left: 50px;
+}
+
+#unu {
+  margin-left: 100px;
+  margin-bottom: -400px;
+}
+
+#2 {
+  display: inline;
+  width: 100%;
+  height: 500px;
+}
+h2 {
+  position: relative;
+  left: 20px;
+  top: 550px;
+  width: 42%;
+  text-align: justify;
+  font-size: 30px;
+  margin-left: 90px;
+}
+
+#doi {
+  margin-left: 1000px;
+  margin-bottom: -200px;
+}
+
+h3 {
+  position: relative;
+  left: 50%;
+  bottom: 100px;
+  right: 100px;
+  width: 42%;
+  text-align: justify;
+  font-size: 30px;
+  margin-left: 50px;
+}
+
+h4 {
+  position: relative;
+  left: 20px;
+  top: 350px;
+  width: 45%;
+  text-align: justify;
+  font-size: 30px;
+  margin-left: 50px;
+}
+
+h5 {
+  position: relative;
+  left: 50%;
+  bottom: 100px;
+  right: 100px;
+  width: 42%;
+  text-align: justify;
+  font-size: 30px;
+  margin-left: 50px;
+}
+
+h6 {
+  position: relative;
+  left: 20px;
+  top: 350px;
+  width: 42%;
+  text-align: justify;
+  font-size: 30px;
+  margin-left: 80px;
+}
+
+#header {
+  background-color: #4da6ff;
+  width: 100%;
+  height: 30vw;
+}
+
+#poza {
+  background-image: url(poze/eu.jpg);
+  height: 30vw;
+  width: 50%;
+  position: relative;
+  top: -30vw;
+  left: 50%;
+}
+
+#scris {
+  height: 30vw;
+  width: 50%;
+  padding: 40px;
+  text-align: justify;
+}
+
+h7 {
+  color: black;
+  font-size: 30px;
+  position: relative;
+  top: 38%;
+  font-weight: 600;
+}
+
+body {
+  background-color: #e8f4f8;
+}
